@@ -8,9 +8,7 @@ variables:
     required: false
     type: array
     default:
-        - elb-old-ssl-policy #
-        - elb-current-ssl-policy # not_violation
-        - elb-load-balancers-active-security-groups-list
+        - elb-old-ssl-policy
     description: "Which rules would you like to run? Possible values are elb-inventory elb-old-ssl-policy elb-current-ssl-policy"
   AUDIT_AWS_ELB_ALERT_RECIPIENT:
     description: "Enter the email address(es) that will receive notifiers. If more than one, separate each with a comma."
